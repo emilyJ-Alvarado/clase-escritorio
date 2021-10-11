@@ -22,15 +22,6 @@ public class clsJDBCConexion {
         this.con = null;
     }
 
-    //Sobrecargar el constructor
-    public clsJDBCConexion(String strBD) {
-        this.driver = "org.postgresql.Driver";
-        this.url = "jdbc:postgresql://localhost:5432/" + strBD;
-        this.user = "postgres";
-        this.password = "12345";
-        this.con = null;
-    }
-
     //Conexión a BD
     public void conectarBD() throws Exception {
         try {
